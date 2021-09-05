@@ -1,13 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from './Components/Home';
-import About from './Components/About';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import HomeContainer from "./containers/HomeContainer"
 
 function App() {
   return (
     <div className="App">
-      <Home data={{name:"lindos", age:25}} />
-      {/* <About /> */}
+        <HomeContainer />
     </div>
   );
 }
