@@ -1,8 +1,8 @@
 import React from 'react'
 import note10 from "../img/note10.jpg"
 
-function Home() {
-    
+function Home(props) {
+    console.warn("Home Props",props)
     return (
         <React.Fragment>
             <div>
@@ -24,7 +24,7 @@ function Home() {
                     </span>
                 </div>
                 <div className="btn-wrapper item">
-                    <button>Add To Cart</button>
+                    <button onClick={()=>props.addToCartHandler({price: 10000, name:"I Phone"})}>Add To Cart</button>
                 </div>
             </div>
         </div>
