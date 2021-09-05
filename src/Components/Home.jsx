@@ -2,13 +2,9 @@ import React from 'react'
 import note10 from "../img/note10.jpg"
 
 function Home(props) {
-    console.warn("Home Props",props)
+    console.warn("Home Props",props.data)
     return (
         <React.Fragment>
-            <div>
-            <div className="add-to-cart">
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/000/496/007/small/Ecommerce_998.jpg" />
-            </div>
             <h1>Home Component</h1>
             <div className="cart-wrapper">
                 <div className="img-wrapper item">
@@ -27,7 +23,6 @@ function Home(props) {
                     <button onClick={()=>props.addToCartHandler({price: 10000, name:"I Phone"})}>Add To Cart</button>
                 </div>
             </div>
-        </div>
         </React.Fragment>
     )
 }

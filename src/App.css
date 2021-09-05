@@ -35,4 +35,19 @@
     right: 1%;
     top: 1%;
 }
+.cart-count{
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 1;
+  background-color: #666;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+}
+.lead{
+  margin-top: -13px;
+}
 /*  */
